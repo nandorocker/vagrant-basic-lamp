@@ -1,0 +1,35 @@
+<VirtualHost *:80>
+	ServerAdmin webmaster@localhost
+	SetEnv ENVIRONMENT development
+	DocumentRoot /vagrant
+	
+	<Directory />
+		Options FollowSymLinks
+		AllowOverride None
+	</Directory>
+	<Directory /vagrant/>
+		Options Indexes FollowSymLinks MultiViews
+		AllowOverride None
+		Order allow,deny
+		allow from all
+
+		RewriteEngine on
+
+        # prevent httpd from serving dotfiles (.htaccess, .svn, .git, etc.)
+        RedirectMatch 403 /\..*$
+        # if a directory or a file exists, use it directly
+        RewriteCond %{REQUEST_FILENAME} !-f
+        RewriteCond %{REQUEST_FILENAME} !-d
+        # otherwise forward it to index.php
+        RewriteRule . index.php
+        </Directory>
+
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+
+        # Possible values include: debug, info, notice, warn, error, crit,
+        # alert, emerg.
+        LogLevel warn
+
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+</VirtualHost>
