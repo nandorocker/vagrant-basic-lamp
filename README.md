@@ -27,7 +27,7 @@ Now copy the `Vagrantfile` **and** `setup/` directory into your project (replace
 
 `$ cp Vagrantfile [path-to-your-project] && cp setup/* [path-to-your-project]`
 
-Now just navigate to your project's directory and start the Vagrant box:
+Navigate to your project's directory. Customize the Vagrantfile to reflect your project details, and start the Vagrant box:
 
 `$ vagrant up`
 
