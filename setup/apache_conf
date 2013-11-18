@@ -1,13 +1,13 @@
 <VirtualHost *:80>
 	ServerAdmin webmaster@localhost
 	SetEnv ENVIRONMENT development
-	DocumentRoot /vagrant
+	DocumentRoot /vagrant/config/public
 	
 	<Directory />
 		Options FollowSymLinks
 		AllowOverride None
 	</Directory>
-	<Directory /vagrant/>
+	<Directory /vagrant/config/public/>
 		Options Indexes FollowSymLinks MultiViews
 		AllowOverride None
 		Order allow,deny
