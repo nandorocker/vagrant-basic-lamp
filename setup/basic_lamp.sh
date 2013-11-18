@@ -10,5 +10,4 @@ sudo apt-get -y install mysql-server
 sudo service apache2 restart
 wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 sudo cp -f /vagrant/setup/apache_conf /etc/apache2/sites-available/
-sudo ssh-keygen -tq rsa
-sudo apt-get -yYJqMGg8qeyYo4f install phpmyadmin
+sudo apt-get -y install phpmyadmin
