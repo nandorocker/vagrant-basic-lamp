@@ -27,9 +27,13 @@ Now copy the `Vagrantfile` **and** `setup/` directory into your project (replace
 
 `$ cp Vagrantfile [path-to-your-project] && cp setup/* [path-to-your-project]`
 
-Now just navigate to your project's directory and start the Vagrant box: `$ vagrant up`
+Now just navigate to your project's directory and start the Vagrant box:
 
-Sit tight and watch the show. Once you're thrown back into the terminal, you're all set. You can access your box with via `$ vagrant ssh`.
+`$ vagrant up`
+
+Sit tight and watch the show. Once you're thrown back into the terminal, you're all set. You can access your box:
+
+`$ vagrant ssh`.
 
 Credits
 -------
