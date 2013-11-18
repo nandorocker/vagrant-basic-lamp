@@ -14,6 +14,7 @@ What's In It
 * PHP 5 (plus modules: mysql, gd, curl)
 * MySQL-server
 * Apache
+* PHPmyAdmin
 * Heroku
 * Some basic system stuff: VIM, curl, Git-core
 
