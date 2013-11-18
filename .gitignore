@@ -1,2 +1,5 @@
 ## Vagrant ##
 .vagrant/
+
+## OS Specific ##
+.DS_Store

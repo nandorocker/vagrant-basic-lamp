@@ -18,6 +18,8 @@ What's In It
 * Heroku
 * Some basic system stuff: VIM, curl, Git-core
 
+Everything that requires a password is using an empty one, since this only for **local** staging purposes.
+
 How To Use
 ----------
 Clone the repo to a separate directory from your project:
