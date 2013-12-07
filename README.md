@@ -10,7 +10,7 @@ Requirements:
 
 What's In It
 ------------
-* Ubuntu 12.04 (precise32)
+* Ubuntu 12.04 (precise64)
 * PHP 5 (plus modules: mysql, gd, curl)
 * MySQL-server
 * Apache
